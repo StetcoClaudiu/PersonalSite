@@ -1,0 +1,99 @@
+.container-language {
+  padding-top: 20vh;
+  overflow-y: scroll;
+  height: 49vh;
+  scrollbar-width: none;
+  padding-bottom: 31vh;
+  width: 70%;
+}
+
+.container-language-mask {
+  width: 99%;
+  height: 100%;
+  position: absolute;
+  left: 2px;
+  background: linear-gradient(
+    rgb(94, 90, 91, 1) 0%,
+    rgb(224, 208, 182, 0) 50%,
+    rgb(94, 90, 91, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.page-language {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+.title-langues {
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 6vmin;
+  margin-left: 10vw;
+}
+
+.text-language {
+  margin-left: 5%;
+  font-size: 3vmin;
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+  padding: 1vmin;
+}
+.current-language {
+  color: white;
+}
+
+.noncurrent-language {
+  color: grey;
+}
+
+.title-language {
+  font-size: 5vmin;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+  transition: 1s;
+  margin-left: 5vh;
+  opacity: 0;
+}
+
+.logo-show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+  transition: 1s;
+}
+
+.logo-disappear-top {
+  transform: translateY(-30vh);
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.logo-disappear-bottom {
+  transform: translateY(30vh);
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+svg {
+  max-width: 30vmin;
+  max-height: 30vmin;
+}
